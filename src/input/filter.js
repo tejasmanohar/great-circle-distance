@@ -13,9 +13,9 @@ const lazy = require('lazy')
  */
 export default function({ data, fn, cb }) {
   new lazy(data)
-        .lines
-        .map(o => JSON.parse(o))
-        .filter(c => fn(c))
-        .map(c => ({ id: c.user_id, name: c.name }))
-        .join(cb)
+    .lines
+    .map(o => JSON.parse(o))
+    .filter(c => fn(c))
+    .map(c => ({ id: c.user_id, name: c.name }))
+    .join(cb)
 }
