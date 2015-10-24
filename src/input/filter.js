@@ -14,7 +14,7 @@ const lazy = new require('lazy')
 export default function({ stream, fn, cb }) {
   lazy(stream)
     .lines
-    .map(c => JSON.parse(c))
+    .map(o => JSON.parse(o))
     .filter(c => fn(c))
     .map(c => ({ id: c.user_id, name: c.name }))
     .join(cb)
