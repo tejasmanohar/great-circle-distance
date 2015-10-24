@@ -3,7 +3,7 @@
  * Module dependencies
  */
 
-const lazy = new require('lazy')
+const lazy = require('lazy')
 
 /**
  * Returns filtered data
@@ -12,10 +12,10 @@ const lazy = new require('lazy')
  * @param {Object()} cb - callback function
  */
 export default function({ data, fn, cb }) {
-  lazy(data)
-    .lines
-    .map(o => JSON.parse(o))
-    .filter(c => fn(c))
-    .map(c => ({ id: c.user_id, name: c.name }))
-    .join(cb)
+  new lazy(data)
+        .lines
+        .map(o => JSON.parse(o))
+        .filter(c => fn(c))
+        .map(c => ({ id: c.user_id, name: c.name }))
+        .join(cb)
 }
