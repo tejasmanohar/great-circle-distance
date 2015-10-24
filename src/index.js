@@ -3,17 +3,15 @@
  * Module dependencies
  */
 
-import filter from './input/filter'
-import { createReadStream } from 'fs'
-import { radians } from './math/angle'
-import distance from './math/distance'
+import { read, filter } from './input'
+import { radians, distance } from './math'
 
 /**
  * Runner
  */
 
 (args => filter({
-  data: createReadStream(args[0] || 'customers.txt'),
+  data: read(args[0] || 'customers.txt'),
   fn: ({ latitude, longitude }) => distance(
     [latitude, longitude].map(radians),
     [0.930927180905, -0.109244654]

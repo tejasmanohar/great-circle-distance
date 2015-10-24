@@ -7,7 +7,7 @@ const lazy = require('lazy')
 
 /**
  * Returns filtered data
- * @param {Object} data - input of stream, string, etc.
+ * @param {Object} data - input- stream, string, etc.
  * @param {Object()} fn - function used for filtering
  * @param {Object()} cb - callback function
  */

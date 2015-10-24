@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "babel-runtime": "^5.8.25",
+    "errno": "^0.1.4",
     "lazy": "^1.0.11"
   }
 }
