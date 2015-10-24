@@ -14,9 +14,9 @@ import getDistance from './math/distance'
 
 (args => filter({
   stream: createReadStream(args[0] || 'customers.txt'),
-  fn: c => !!(getDistance(
+  fn: c => getDistance(
     [c.latitude, c.longitude].map(radians),
     [0.930927180905, -0.109244654]
-  ) < (args[1] || 100)),
+  ) < (args[1] || 100),
   cb: res => console.log(res)
 }))(process.argv.splice(2))
