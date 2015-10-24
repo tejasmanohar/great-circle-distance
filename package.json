@@ -1,0 +1,17 @@
+{
+  "name": "greatest-circle",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejasmanohar/greatest-circle.git"
+  },
+  "author": "Tejas Manohar <me@tejas.io>",
+  "bugs": {
+    "url": "https://github.com/tejasmanohar/greatest-circle/issues"
+  },
+  "homepage": "https://github.com/tejasmanohar/greatest-circle#readme"
+}
