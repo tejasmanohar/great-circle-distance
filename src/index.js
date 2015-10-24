@@ -18,5 +18,5 @@ import distance from './math/distance'
     [latitude, longitude].map(radians),
     [0.930927180905, -0.109244654]
   ) < (args[1] || 100),
-  cb: res => console.log(res)
+  cb: ::console.log
 }))(process.argv.splice(2))
