@@ -13,7 +13,7 @@ import distance from './math/distance'
  */
 
 (args => filter({
-  stream: createReadStream(args[0] || 'customers.txt'),
+  data: createReadStream(args[0] || 'customers.txt'),
   fn: ({ latitude, longitude }) => distance(
     [latitude, longitude].map(radians),
     [0.930927180905, -0.109244654]
