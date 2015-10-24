@@ -6,7 +6,7 @@
 import filter from './input/filter'
 import { createReadStream } from 'fs'
 import { radians } from './math/angle'
-import getDistance from './math/distance'
+import distance from './math/distance'
 
 /**
  * Runner
@@ -14,8 +14,8 @@ import getDistance from './math/distance'
 
 (args => filter({
   stream: createReadStream(args[0] || 'customers.txt'),
-  fn: c => getDistance(
-    [c.latitude, c.longitude].map(radians),
+  fn: ({ latitude, longitude }) => distance(
+    [latitude, longitude].map(radians),
     [0.930927180905, -0.109244654]
   ) < (args[1] || 100),
   cb: res => console.log(res)
