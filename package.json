@@ -18,5 +18,9 @@
   "homepage": "https://github.com/tejasmanohar/greatest-circle#readme",
   "devDependencies": {
     "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "degrees-radians": "^1.0.3",
+    "lazy": "^1.0.11"
   }
 }
