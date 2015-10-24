@@ -3,7 +3,7 @@
  * Module dependencies
  */
 
-const lazy = require('lazy')
+import lazy from 'lazy'
 
 /**
  * Returns filtered data
