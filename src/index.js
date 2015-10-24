@@ -3,10 +3,10 @@
  * Module dependencies
  */
 
-import { createReadStream } from 'fs'
 import filter from './input/filter'
-import getDistance from './math/distance'
+import { createReadStream } from 'fs'
 import { radians } from './math/angle'
+import getDistance from './math/distance'
 
 /**
  * Runner
