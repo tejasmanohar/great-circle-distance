@@ -11,9 +11,8 @@ function centralAngle(c1, c2) {
 }
 
 /**
- * Returns distance between two coordinates
- * @param {Object[]} c1 - 1st [lat, lon] pair
- * @param {Object[]} c2 - 2nd [lat, lon] pair
+ * Calculate distance between two coordinates
+ * ...
  */
 export default function(c1, c2) {
   const angle = centralAngle(c1, c2)
