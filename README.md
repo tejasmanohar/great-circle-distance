@@ -7,14 +7,16 @@ within 100 km of a set coordinate pair sorted by user id (ascending).
 ## Setup
 
 Assuming you have Node 0.10.x+ (and thus, NPM) installed, simply clone this repo
-locally and fetch dependencies + precompile ES6/7 to ES5 via `npm install`.
+locally and fetch dependencies + precompile ES6/7 to ES5 via `npm install` in
+the root of the project directory.
 
 ## Usage
 
-To execute the CLI, run `npm start`. The script accepts a file path
-argument (like `npm start users.txt`), but if none is provided, it will
-default to `./customers.txt` (relative to the current working directory).
-Options may be passed in with the style `--option=x`.
+To execute the CLI, run `npm start` in the root of the project directory.
+The script accepts a file path argument (like `npm start users.txt`),
+but if none is provided, it will default to `./customers.txt`
+(relative to the current working directory). Options may be provided
+with the style `--option=x`.
 
 ## Options
 
