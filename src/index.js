@@ -18,7 +18,7 @@ import { read, filter } from './input'
     [latitude, longitude].map(Number).map(radians),
     parseArray(args.coordinates) || [0.930927180905, -0.109244654]
   ) < (args.distance || 100),
-  cb: console.log
+  cb: customers => console.log(customers.sort((a, b) => a.user_id - b.user_id))
 }))(minimist(process.argv.slice(2)))
 
 /**

@@ -16,6 +16,5 @@ export default function({ data, fn, cb }) {
     .lines
     .map(JSON.parse)
     .filter(fn)
-    .map(c => ({ id: c.user_id, name: c.name }))
     .join(cb)
 }

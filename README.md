@@ -1,6 +1,9 @@
 
 # Great Circle Distance
 
+This program reads a list of customers provided in JSON and outputs customers
+within 100 km of a set coordinate pair sorted by user id (ascending).
+
 ## Setup
 
 Assuming you have Node 0.10.x+ (and thus, NPM) installed, simply clone this repo
@@ -16,9 +19,9 @@ Options may be passed in with the style `--option=x`.
 ## Options
 
 * _coordinates_
-  * __description:__ comma-separated latitude/longitude pair
-  * __example:__ 0.9, -0.44
-  * __default:__ 0.930927180905, -0.109244654
+  * __description:__ comma-separated latitude/longitude pair (degrees)
+  * __example:__ 30, 24
+  * __default:__ 53.3381985, -6.2592576
 * _distance_
   * __description:__ maximum distance from location in kilometers (km)
   * __example:__ 355
