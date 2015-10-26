@@ -5,8 +5,7 @@
   "scripts": {
     "start": "node dist/",
     "precompile": "babel --optional runtime -d dist/ src/",
-    "postinstall": "npm run precompile",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "npm run precompile"
   },
   "repository": {
     "type": "git",
