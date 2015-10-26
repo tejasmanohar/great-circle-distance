@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "main": "dist/index.js",
   "scripts": {
+    "start": "node dist/",
     "precompile": "babel --optional runtime -d dist/ src/",
     "postinstall": "npm run precompile",
-    "prepublish": "npm run precompile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
