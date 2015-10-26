@@ -3,7 +3,7 @@
  * Module dependencies
  */
 
-import lazy from 'lazy'
+import Lazy from 'lazy'
 
 /**
  * Returns filtered data
@@ -12,7 +12,7 @@ import lazy from 'lazy'
  * @param {Object()} cb - callback function
  */
 export default function({ data, fn, cb }) {
-  new lazy(data)
+  new Lazy(data)
     .lines
     .map(o => JSON.parse(o))
     .filter(c => fn(c))
