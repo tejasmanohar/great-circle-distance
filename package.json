@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "precompile": "babel --optional runtime -d dist/ src/",
+    "postinstall": "npm run precompile",
     "prepublish": "npm run precompile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
