@@ -1,7 +1,7 @@
 {
   "name": "greatest-circle",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "precompile": "babel --optional runtime -d dist/ src/",
     "postinstall": "npm run precompile",
