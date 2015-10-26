@@ -14,8 +14,8 @@ import Lazy from 'lazy'
 export default function({ data, fn, cb }) {
   new Lazy(data)
     .lines
-    .map(o => JSON.parse(o))
-    .filter(c => fn(c))
+    .map(::JSON.parse)
+    .filter(::fn)
     .map(c => ({ id: c.user_id, name: c.name }))
     .join(cb)
 }
