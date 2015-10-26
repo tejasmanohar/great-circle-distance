@@ -21,6 +21,10 @@ import { read, filter } from './input'
   cb: console.log
 }))(minimist(process.argv.slice(2)))
 
+/**
+ * Parse comma-separated values into Array
+ * @param {string} str - comma-separated values (i.e. '1,2,3')
+ */
 function parseArray(str) {
   if (!str) return
   return str.split(',')
