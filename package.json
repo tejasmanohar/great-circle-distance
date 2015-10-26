@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "babel-runtime": "^5.8.25",
+    "degrees-radians": "^1.0.3",
     "errno": "^0.1.4",
     "lazy": "^1.0.11",
     "minimist": "^1.2.0"
