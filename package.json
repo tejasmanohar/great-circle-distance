@@ -2,6 +2,9 @@
   "name": "greatest-circle",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "bin": {
+    "great-circle-distance": "bin/great-circle-distance"
+  },
   "scripts": {
     "start": "node dist/",
     "precompile": "babel --optional runtime -d dist/ src/",
